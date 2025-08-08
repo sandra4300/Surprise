@@ -13,6 +13,14 @@
         alert('Mot de passe incorrect, essaie encore !');
       }
     }
+    // Permettre la validation avec "Enter"
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('mdp').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          verifier();
+        }
+      });
+    });
   </script>
   <style>
     body { font-family: sans-serif; text-align: center; padding-top: 100px; }
