@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF‑8">
+  <title>Surprise</title>
+  <script>
+    function verifier() {
+      const mdp = document.getElementById('mdp').value;
+      if (mdp === 'Laponie') {
+        document.getElementById('secret').style.display = 'block';
+        document.getElementById('form').style.display = 'none';
+      } else {
+        alert('Mot de passe incorrect, essaie encore !');
+      }
+    }
+  </script>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding-top: 100px; }
+    #secret { display: none; }
+  </style>
+</head>
+<body>
+  <div id="form">
+    <h1>Entre le mot de passe !</h1>
+    <input type="password" id="mdp" placeholder="Mot de passe" />
+    <button onclick="verifier()">Valider</button>
+  </div>
+  <div id="secret">
+    <h2>Surprise !</h2>
+    <p>Ton séjour te mènera à l’hôtel <strong>Hôtel_du_Fjord</strong> du <strong>1er au 5 décembre 2025</strong> (exemple).</p>
+  </div>
+</body>
+</html>
