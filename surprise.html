@@ -1,1 +1,52 @@
-<h1>As-tu trouvé le mot de passe ? Entre-le… et vois où cela t’emmène !</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Surprise</title>
+  <style>
+    body {
+      background: #f7f9fb;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      color: #155263;
+      margin-top: 40px;
+      margin-bottom: 30px;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      padding: 20px 0 40px 0;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery img {
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(21, 82, 99, 0.14);
+      width: 340px;
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.2s;
+      background: #fff;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>As-tu trouvé le mot de passe ? Entre-le… et vois où cela t’emmène !</h1>
+  <div class="gallery">
+    <img src="https://admin-directours.orchestra-platform.com/admin/TS/fckUserFiles/Image/europe_mediterranee/islande/Ivalo_Laponie/diapo/08_rennes.jpeg" alt="Photo 1">
+    <img src="https://admin-directours.orchestra-platform.com/admin/TS/fckUserFiles/Image/europe_mediterranee/islande/Ivalo_Laponie/diapo/07_chiens_traineau.jpeg" alt="Photo 2">
+    <!-- Ajoute ici d'autres photos si besoin -->
+  </div>
+</body>
+</html>
